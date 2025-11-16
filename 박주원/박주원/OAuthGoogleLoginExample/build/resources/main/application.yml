@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/hello
+    username: hello
+    password: hello
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show-sql: true
+        format_sql: false
+        use_sql_comments: true
+
+jwt:
+  secret: u7HiRW6de/84EFfp/J1Uc/7+fuyBkKx8PIGpvacc/t4=
+  access-token-validity-in-milliseconds: 1800000000000
